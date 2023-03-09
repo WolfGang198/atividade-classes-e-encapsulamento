@@ -1,0 +1,8 @@
+Funcionario:
+-nome
+-departamento
+-salario
+-data entrada
+-RG
+-adimitido
+-demitido
