@@ -6,3 +6,4 @@ Funcionario:
 -RG
 -adimitido
 -demitido
+-bonifica
