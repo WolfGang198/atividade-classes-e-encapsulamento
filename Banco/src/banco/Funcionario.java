@@ -1,124 +1,76 @@
-
 package banco;
 
-public class Funcionario {
+public class Funcionario{
     private String nome;
     private String departamento;
     private double salario;
-    private String dataEntrada;
-    private String RG;
-    private double aumento;
-    private boolean contratado;
-    
-    void admitido(){
-        setContratado(true);
-    }
-    
-    void demitido(){
-        setContratado(false);
-    }
-    
-    void bonifica(double aumento){
-        setSalario(getSalario() + aumento);
+    private String dataEntradaBanco;
+    private String rg;
+    private boolean ativo;
+
+    public void bonifica(double aumento) {
+        salario += aumento;
     }
 
-    /**
-     * @return the nome
-     */
+    public void demite() {
+        ativo = false;
+    }
+
+    public void mostra() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Departamento: " + departamento);
+        System.out.println("Salário: " + salario);
+        System.out.println("Data de entrada no banco: " + dataEntradaBanco);
+        System.out.println("RG: " + rg);
+        System.out.println("Ativo na empresa? " + ativo);
+    }
+
     public String getNome() {
         return nome;
     }
 
-    /**
-     * @param nome the nome to set
-     */
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    /**
-     * @return the departamento
-     */
     public String getDepartamento() {
         return departamento;
     }
 
-    /**
-     * @param departamento the departamento to set
-     */
     public void setDepartamento(String departamento) {
         this.departamento = departamento;
     }
 
-    /**
-     * @return the salario
-     */
     public double getSalario() {
         return salario;
     }
 
-    /**
-     * @param salario the salario to set
-     */
     public void setSalario(double salario) {
         this.salario = salario;
     }
 
-    /**
-     * @return the dataEntrada
-     */
-    public String getDataEntrada() {
-        return dataEntrada;
+    public String getDataEntradaBanco() {
+        return dataEntradaBanco;
     }
 
-    /**
-     * @param dataEntrada the dataEntrada to set
-     */
-    public void setDataEntrada(String dataEntrada) {
-        this.dataEntrada = dataEntrada;
+    public void setDataEntradaBanco(String dataEntradaBanco) {
+        this.dataEntradaBanco = dataEntradaBanco;
     }
 
-    /**
-     * @return the RG
-     */
-    public String getRG() {
-        return RG;
+    public String getRg() {
+        return rg;
     }
 
-    /**
-     * @param RG the RG to set
-     */
-    public void setRG(String RG) {
-        this.RG = RG;
+    public void setRg(String rg) {
+        this.rg = rg;
     }
 
-    /**
-     * @return the aumento
-     */
-    public double getAumento() {
-        return aumento;
+    public boolean isAtivo() {
+        return ativo;
     }
 
-    /**
-     * @param aumento the aumento to set
-     */
-    public void setAumento(double aumento) {
-        this.aumento = aumento;
+    public void setAtivo(boolean ativo) {
+        this.ativo = ativo;
     }
-
-    /**
-     * @return the contratado
-     */
-    public boolean isContratado() {
-        return contratado;
-    }
-
-    /**
-     * @param contratado the contratado to set
-     */
-    public void setContratado(boolean contratado) {
-        this.contratado = contratado;
-    }
-    
-    
 }
+
