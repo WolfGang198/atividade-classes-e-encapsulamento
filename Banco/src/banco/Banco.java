@@ -14,6 +14,9 @@ public class Banco {
         f1.setContratado(true);
         
         System.out.println("Salario atual: " + f1.getSalario());
+        
+        main m1 = new main();
+        
     }
     
 }
