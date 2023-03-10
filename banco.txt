@@ -4,7 +4,7 @@ Funcionario:
 -salario
 -data entrada
 -RG
--almento
+-aumento
 -contratado
 -adimitido
 -demitido
